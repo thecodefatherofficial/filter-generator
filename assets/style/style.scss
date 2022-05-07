@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter{
+    &_main{
+        width: 450px;
+        .realPixel, .filterPixel{
+            display: inline-block;
+            background-color: #000;
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+        }
+        .txt{
+            display: flex;
+            align-items: center;
+            svg{
+                width: 20px;
+            }
+        }
+        .filterDetail{
+            line-height: 20px;
+        }
+        .input{
+            p{
+                input{
+                    width: 400px;
+                    padding: 10px 16px;
+                    border-radius: 50px;
+                    border: 1px solid;
+                }
+                label{
+                    margin-bottom: 10px;
+                }
+            }
+            button{
+                padding: 7px 35px;
+                background: transparent;
+                border: 2px solid;
+                border-radius: 50px;
+                font-weight: 600;
+                transition: 0.3s;
+                &:hover{
+                    background: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
